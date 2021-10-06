@@ -1,0 +1,59 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  color: grey;
+}
+
+h1 {
+  font-size: 4em;
+  color: orange;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+}
+
+h2 {
+  font-size: 2em;
+
+}
+
+h2:first-child::first-letter {
+  font-size: 1.8em;
+}
+
+#logo {
+  float: left;
+  margin-right: 2em;
+  height: 10em;
+  width: 10em;
+}
+
+.product {
+  height: 15em;
+  width: 15em;
+}
+
+#slogan {
+  font-size: 1em;
+}
+
+a, a:visited{
+  font-weight: bold;
+  color: orange;
+}
+
+a:hover {
+  color: green;
+}
+
+ul li {
+  margin: 1em;
+}
+
+footer {
+  margin: 5em;
+  font-size: 0.8em;
+  text-align: center;
+}

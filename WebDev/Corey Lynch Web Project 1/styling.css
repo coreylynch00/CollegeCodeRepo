@@ -1,0 +1,206 @@
+body {
+  background-image: url(images/dark-honeycomb.png);
+  /*https://www.toptal.com/designers/subtlepatterns/?s=dark*/
+  font-family: courier;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  font-weight: 200;
+}
+
+.title {
+  color: #749547;
+  text-shadow: 4px 4px 12px #000;
+  font-size: 3.5em;
+  font-family: courier;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h1 {
+  color: #749547;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px #000;
+  font-family: courier;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 90%;
+}
+
+nav ul {
+  margin: 4em;
+  padding: 4em;
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  width: 15em;
+  height: 2em;
+  background-color: black;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #749547;
+}
+
+.intro_video {
+  color: #749547;
+  font-size: 1.5em;
+}
+
+#video {
+  margin: 1em;
+  padding: 1em;
+  border-radius: 3em;
+  border-color: #749547
+}
+
+p {
+  margin: 1em;
+  padding: 1em;
+}
+
+footer small {
+  padding: 2em;
+  margin: 2em;
+  text-decoration: overline;
+  text-decoration-style: double;
+}
+
+h2 {
+  color: #586f3b;
+  text-shadow: 2px 2px 4px #000;
+}
+
+h3 {
+  color: #586f3b;
+  text-shadow: 2px 2px 4px #000;
+}
+
+dt {
+  color: #586f3b;
+  text-shadow: 2px 2px 4px #000;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+dl {
+  text-align: left;
+}
+
+dt, dd {
+  display: block;
+  float: left;
+  margin-top: 0.5em;
+}
+
+dt {
+  clear: both;
+}
+
+.how_to {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+strong:hover {
+  text-transform: full-width;
+  background-color: #586f3b;
+  text-decoration: underline;
+  border: 2em;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  color: #749547;
+}
+
+a img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 90%;
+}
+
+table {
+  padding-left: 16em;
+}
+
+.table_heading {
+  padding-left: 16em;
+}
+
+table tr td {
+  border: 2px solid #586f3b;
+}
+
+.table_category {
+  color: #586f3b;
+  font-weight: bold;
+}
+
+ol {
+  list-style-position: inside;
+  color: #749547;
+}
+
+.comp_intro {
+  text-decoration: underline;
+  color: #749547
+}
+
+p small {
+  color: darkred;
+  font-family: fantasy;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px black;
+}
+
+form fieldset {
+  color: #749547;
+  font-weight: bold;
+}
+
+form label {
+  color: #586f3b;
+}
+
+.button {
+  color: green;
+  font-family: fantasy;
+}
+
+dd a {
+  color: green;
+}
+
+.about_page footer nav {
+  padding-top: 10em;
+}
+
+.contact_page p a:hover {
+  color: limegreen;
+}
+
+.contact_page p a {
+  color: green;
+  text-decoration: none;
+}

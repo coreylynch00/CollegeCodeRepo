@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!-- JavaScript to toss two coins -->
+	<head>
+		<meta charset="utf-8">
+		<title>Toss Coins</title>
+	</head>
+	<body>
+		<header>
+			<h1>Toss The Coins Game</h1>
+		</header>
+		<main>
+			<!-- click the button to toss the coins - get a match to win -->
+			<div id="img1"><img src="images/coin0.jpg" width="100" height="100" alt="coin"></div>
+			<div id="img2"><img src="images/coin0.jpg" width="100" height="100" alt="coin"></div>
+
+			<!-- provide a button for user to click on to start the game. -->
+			<button onclick =""<!--call the function to toss the coins --> >Have a Go</button> 
+
+			<!-- Inform user game rules -->
+			<p>Click Go button to toss the coins. <em>Match 2 heads to win.</em> </p>
+			
+			<!-- Inform user of win/loss -->
+			<h2 id="winMessage"></h2>
+		</main>
+		<footer>
+			<p>&copy; 2019 Me!<!-- or your Initials here --> </p>
+		</footer>
+		
+	</body>
+</html>
+
+		

@@ -1,0 +1,45 @@
+body  {
+  background-color: #E6E6FA;
+  color: #191970;
+  font-size: 100%;
+}
+
+h1  {
+  background-color: #191970;
+  color: #E6E6FA;
+  margin-bottom: 0;
+}
+
+h2  {
+  background-color: #AEAED4;
+  color: 191970;
+}
+
+small {
+  font-size: 80%;
+}
+
+nav {
+  background-color: white;
+  border-bottom: 1px, solid;
+  border-top: 1px, solid;
+}
+
+header nav  {
+  background-color: lightyellow;
+  border-bottom: 1px, solid;
+  border-top: 1px, solid;
+  text-align: center;
+}
+
+main  {
+  background-color: #F6F6FD;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,4 @@
+Name: Spider man 
+Power: Web, climbing, reflexes, spider-sense 
+Alter-ego: Peter parker 
+Origin: Earth

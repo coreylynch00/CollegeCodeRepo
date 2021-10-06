@@ -1,0 +1,4 @@
+Name: Captain america 
+Power: Strength, agility, reactions, endurance 
+Alter-ego: Steve rogers 
+Origin: Earth

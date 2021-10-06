@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  background-image: linear-gradient(to bottom, #8a2bb5, #7c3fbe, #6d4ec5, #5e5ac9, #4f64cc, #3972d2, #1f7ed6, #0089d7, #0099d8, #00a8d0, #00b4c3, #24beb4);
+}
+
+header {
+  padding: 20px;
+}
+
+header nav a {
+  padding: 3px;
+  text-decoration: none;
+  background-color: #8a2bb5;
+  color: black;
+  border: 2px outset black;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+header nav a:hover {
+  background-color: #6d4ec5;
+  opacity: 0.9;
+  color: #24beb4;
+}
+
+main {
+  padding: 40px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+h2 {
+  padding: 5px;
+}
+
+p {
+  padding: 10px;
+  margin: 1em;
+}
+
+footer {
+  padding: 20px;
+  clear: left;
+}
+
+#social {
+  text-align: right;
+  padding: auto;
+}
+
+#section1 {
+  float: left;
+  width: 16%;
+}
+
+#section1 a {
+  display: block;
+  text-decoration: none;
+  width: 50%;
+  margin: auto;
+  padding-top: 49.55%;
+  padding-bottom: 49.55%;
+  color: black;
+  text-align: center;
+}
+
+#section1 a:hover {
+  background-color: #6d4ec5;
+  opacity: 0.9;
+  color: #24beb4;
+}
+
+#section2 {
+  float: left;
+  width: 84%;
+}
+
+#section3 {
+  float: left;
+  text-align: center;
+
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.footer_nav {
+  padding: 3px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}

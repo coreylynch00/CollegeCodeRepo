@@ -1,0 +1,4 @@
+Name: Batman 
+Power: Strength, money 
+Alter-ego: Bruce wayne 
+Origin: Earth

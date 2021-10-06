@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Bad Websites</title>
+  </head>
+
+  <body>
+    <h1>Bad Websites</h1>
+    <fieldset>
+      <legend>Submit your suggestion for our "Bad Websites" award</legend>
+      <form method="get" action="https://webdevcit.com/displayvalues.php" target="_blank">
+
+        <p>
+          <label>Name</label><input type="text" name="name" autocomplete="on">
+        </p>
+        <p>
+          <label>Email Address<em>(required)</em></label><input type="email" name="email" placeholder="name@domain.com" autocomplete="on" required>
+        </p>
+        <p>
+          <label>Website Address<em>(required)</em></label><input type="text" name="website_address" placeholder="www.domainname.com" required>
+        </p>
+    </fieldset>
+    <fieldset>
+      <legend>Your Comments</legend>
+        <p>
+          <textarea name="comments" rows="5" cols="80" placeholder="Enter Your Comments Here" required></textarea>
+        </p>
+        <p>
+          Too much to say? Upload you file<input type="file" name="uploaded_file" id="uploaded_file">
+        </p>
+    </fieldset>
+    <fieldset>
+      <legend>Would you like to be updated when new websites are added?</legend>
+      <label><input type="radio" name="updates" value="yes">Count Me In!</label>
+      <label><input type="radio" name="updates" value="no">Not Right Now!</label>
+    </fieldset>
+    <fieldset>
+      <legend>Are you a real person?<em>(required)</em></legend>
+        <p>
+          What is you favourite colour?<input type="color" name="favourite_colour" value="#ff0000">
+        </p>
+        <p>
+          What is your date of birth?<input type="date" name="date_of_birth" value="date_of_birth" required>
+        </p>
+        <p>
+          Where do you like to shop?
+          <select>
+            <option>Please choose</option>
+            <option value="tk_maxx">TK Maxx</option>
+            <option value="tesco">Tesco</option>
+            <option value="dunnes">Dunnes</option>
+            <option value="lidl">Lidl</option>
+          </select>
+        </p>
+    </fieldset>
+        <p>
+          <input type="submit" value="Submit Query">
+          <input type="reset" value="Reset">
+        </p>
+    </form>
+  </body>
+  
+</html>

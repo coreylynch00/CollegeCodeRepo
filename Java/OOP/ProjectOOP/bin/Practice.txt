@@ -1,0 +1,8 @@
+Consultant,Walsh,Harry,812,hw@x.com,Cardiology
+Patient,Murphy,Annie,1223,hw@x.com,Angina,4
+Visit,01/12/2020,Initial Consult
+Visit,01/12/2020,Pacemaker
+Patient,Murphy,Danny,7213,hw@x.com,Arithmyia,2
+Visit,01/12/2020,ECG work
+Consultant,Walsh,Adam,912,hw@x.com,Cancer
+Patient,Murphy,Tommy,3412,hw@x.com,Skin,4

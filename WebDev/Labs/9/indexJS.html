@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+	<meta charset="utf-8">
+	<title>Introduction to JavaScript</title>
+	<link href="indexJS_styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1>Welcome to JavaScript Programming, <span id="username"></span></h1>
+	</header>
+	<main>
+		<p>The quick brown fox jumps over the lazy dog.</p>
+
+		<button onclick="document.getElementById('demo').innerHTML = Date()">Date and Time</button>
+		<p>
+			The current Date and Time is: <span id="demo"></span>
+		</p>
+
+		<button onclick="myFunction()">Say Hello</button>
+		<script>
+			function myFunction() {
+				alert("Hello " + name + "!")
+			}
+		</script>
+
+	<hr>
+
+	<button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+	<img id="myImage" src="images/pic_bulboff.gif">
+	<button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+
+	</main>
+	<footer>
+		<p>&copy; 2019 Corey Lynch (CL)</p>
+	</footer>
+	<script>
+		var name;
+		name = prompt("Please enter your name");
+		document.getElementById('username').innerHTML = name;
+	</script>
+</body>
+
+</html>

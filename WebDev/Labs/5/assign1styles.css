@@ -1,0 +1,14 @@
+p   {font-size: 20px;
+    color: deepskyblue;
+    font-family: arial, sans-serif;
+}
+
+em  {font-weight: bold;
+    color: black;
+}
+
+h1  {font-family: tahoma, helvetica, sans-serif;
+}
+
+.special  {color: purple;
+}

@@ -1,0 +1,136 @@
+		html {
+		  font-family: Verdana, Arial, sans-serif;
+		  background-color: #00005D;
+		}
+
+		body {
+		  background-color: #b3c7e6;
+		  color: #000066;
+		  width: 80%;
+		  margin: auto;
+		}
+
+		header {
+		  background-color: #869dc7;
+		  color: #00005D;
+		  padding: 10px;
+		}
+
+		header h1 {
+		  padding-left: 20px;
+		}
+
+		header h2 {
+		  margin-top: 0;
+		  padding-right: 20px;
+		  font-size: .80em;
+		  font-style: italic;
+		  text-align: right;
+		  color: #00005D;
+		}
+
+		nav {
+		  float: left;
+		  width: 150px;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		nav a {
+		  text-decoration: none;
+		  letter-spacing: 0.1em;
+		  font-weight: bold;
+		  padding: 15px;
+		  display: block;
+		}
+
+		nav a:link {
+		  color: #ffffff;
+		}
+
+		nav a:visited {
+		  color: #eaeaea;
+		}
+
+		nav a:hover {
+		  color: #869dc7;
+		}
+
+		#content {
+		  background-color: #ffffff;
+		  color: #000000;
+		  padding: 10px 20px;
+		  overflow: auto;
+		}
+
+		h2 {
+		  color: #869dc7;
+		  font-family: arial, sans-serif;
+		  margin: 5px;
+		}
+
+		figure {
+		  float: right;
+		  margin: 10px;
+		  padding-left: 20px;
+		}
+
+		figcaption {
+		  text-align: center;
+		  font-size: .8em;
+		  font-style: italic;
+		}
+
+		footer {
+		  font-size: 70%;
+		  text-align: center;
+		  padding: 10px;
+		  background-color: #869dc7;
+		  clear: both;
+		}
+
+		header, nav, footer, figure, figcaption {
+		  display: block;
+		}
+
+		@media only screen and (max-width: 768px;) {
+			html {
+				margin: 0;
+			}
+			body {
+				auto;
+			}
+			main nav {
+				float: none;
+				width: 100%;
+				padding: 0.5em;
+				text-align: center;
+			}
+			main nav a {
+				display: inline;
+			}
+		}
+
+		@media only screen and (max-width: 480px;) {
+			html {
+				margin: 0;
+			}
+			body {
+				width: auto;
+			}
+			#content {
+				margin-top: -0.5em;
+			}
+			figure {
+				float: none;
+				padding: 0;
+				margin: 0;
+				text-align: center;
+			}
+			main nav a {
+				display: block;
+				font-size: 120%;
+				margin: 0;
+				border-bottom: 2px ridge #00005d;
+			}
+		}

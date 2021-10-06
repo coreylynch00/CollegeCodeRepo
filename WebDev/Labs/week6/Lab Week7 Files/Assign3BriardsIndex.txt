@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+	<head>
+		<meta charset="utf-8">
+		<title>Briard Dog Breed</title>
+	</head>
+	<body> 
+		<!-- add the Semantic Elements to break up the body of the document -->
+		<!-- main heading <h1> goes here -->
+		<!-- don't forget to add your links! -->
+		<!-- subheading <h2> goes here -->
+		<p>
+			The <a href="https://en.wikipedia.org/wiki/Briard" title="https://en.wikipedia.org/wiki/Briard">briard</a> or berger de brie, 
+			is a large breed of dog traditionally used as a herder and guardian of sheep.
+		</p>
+		Breed History
+		<p>
+			The briard, which is belived to have originated in France, has been bred for centuries to herd and to protect sheep.  The breed was used by the French Army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing.  Briards were used in the First World War almost to the point of extinction.  Currently the population of briards is slowly recovering.  Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.
+		</p>
+		<p>by Ivy Duckett</p>
+	</body>
+</html>

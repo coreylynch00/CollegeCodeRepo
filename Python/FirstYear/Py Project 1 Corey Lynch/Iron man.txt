@@ -1,0 +1,4 @@
+Name: Iron man 
+Power: Money, intelligence 
+Alter-ego: Tony stark 
+Origin: Earth

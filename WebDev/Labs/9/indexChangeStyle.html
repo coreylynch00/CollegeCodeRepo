@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+  <title>Change Styles</title>
+  <meta charset="utf-8">
+  <link href="indexChangeStyle_styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Change Styles using JavaScript</h1>
+  </header>
+
+  <main>
+    <h2>Change Font Size and Text</h2>
+    <p>Paragraph of text in default font size for the page</p>
+    <p id="changeText">This paragraph of text will display in a different font size or case depending on which button you select below!</p>
+    <p>
+      <button onclick="document.getElementById('changeText').style.fontSize='2em'">Larger</button>
+      <button onclick="document.getElementById('changeText').style.fontSize='0.5em'">Smaller</button>
+      <button onclick="document.getElementById('changeText').style.fontSize='1em'">Restore Size</button>
+    </p>
+    <p>
+      <button onclick="document.getElementById('changeText').style.textTransform='uppercase'">UPPERCASE</button>
+      <button onclick="document.getElementById('changeText').style.textTransform='lowercase'">lowercase</button>
+      <button onclick="document.getElementById('changeText').style.textTransform='initial'">Restore Case</button>
+    </p>
+
+  </main>
+</body>
+
+</html>

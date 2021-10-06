@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Trillium Media Design</title>
+	</head>
+
+	<body>
+		<h1>Trillium Media Design</h1>
+		<!-- include 3 links here for the Home, Services and Contact pages. -->
+
+		<h2>New Media and Web Design</h2>
+		<p>
+			Trillium Media Design will bring your company's Web presence
+			to the next level. We offer a comprehensive range of services:
+		</p>
+		<ul>
+			<li>Website Design </li>
+			<li>Interactive Animation</li>
+			<li>E-Commerce Solutions </li>
+			<li>Usability Studies </li>
+			<li>Search Engine Optimisation </li>
+		</ul>
+		<h2>Meeting Your Business Needs</h2>
+		<p>
+			Our expert designers are creative and eager to work with you.
+		</p>
+		<small>Copyright &copy; Year Your Own Name</small>
+	</body>
+</html>

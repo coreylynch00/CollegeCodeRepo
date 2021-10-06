@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Validate Input</title>
+	</head>
+	<body>
+		<header>
+			<h1>JavaScript Can Validate Input</h1>
+		</header>
+		<main>
+			<form action="">
+				<label>Please input a number between 1 and 10: </label>
+				<input id="num" type="number">
+				<p>
+					<button type="button" onclick="myFunction()">Submit</button>
+				</p>
+				<p id="demo"></p>
+			</form>
+		</main>
+		<footer>
+			<p>&copy; 2019 <!-- or your Initials here --> </p>
+		</footer>
+	</body>
+</html> 

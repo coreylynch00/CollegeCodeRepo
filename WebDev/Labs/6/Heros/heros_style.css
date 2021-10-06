@@ -1,0 +1,44 @@
+body {
+  width: 80%;
+  font-family: sans-serif, Arial;
+  margin: auto;
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+  color: white;
+}
+
+li {
+  border: 10px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.xmen {
+  font-family: fantasy;
+  background-color: darkgreen;
+  color: white;
+}
+
+.justice_league {
+  font-family: "Snap ITC", serif;
+  background-color: darkred;
+  color: white;
+}
+
+#lantern {
+  font-weight: bold;
+  font-family: courier;
+  background-color: pink;
+  color: blue;
+}
+
+.villain {
+  background-color: grey;
+  color: black;
+  font-family: "Brush Script MT";
+  list-style-image: url("angry.png");
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+  <title>Removing/Hiding/Restoring Content</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <h1>Removing/Hiding/Restoring Content</h1>
+  </header>
+
+  <main>
+    <img id="removeConent" src="images/pic_bulboff.gif" alt="bulb off">
+    <p>
+      <button onclick="removefunction()">Remove Image</button>
+      <button onclick="document.getElementById('removeConent').style.display='initial'">Show Image</button>
+    </p>
+  </main>
+  <script>
+    function removefunction() {
+      document.getElementById('removeConent').style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

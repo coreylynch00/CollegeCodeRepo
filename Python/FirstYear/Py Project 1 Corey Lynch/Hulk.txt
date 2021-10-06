@@ -1,0 +1,4 @@
+Name: Hulk 
+Power: Strength, durability 
+Alter-ego: Bruce banner 
+Origin: Earth

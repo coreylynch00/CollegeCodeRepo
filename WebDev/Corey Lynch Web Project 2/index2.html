@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-IE">
+
+<head>
+  <title>Superhero's</title>
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet">    <!-- link css file -->
+</head>
+
+<body>
+  <header>
+    <h1 id="welcome">Random Hero Game</h1>
+  </header>
+
+  <main>
+    <p>Just hit the <span id="search">search</span> button to play!</p>
+    <p>Can you guess which hero will come next? Scroll down to see if you were correct!</p>
+    <div id="button">
+      <input type="button" value="Search" onclick="GetValue();"></input>
+    </div>
+    <p id="hero"></p>         <!-- paragraph where hero will print -->
+    <script>
+      function GetValue() {       /* create custom function */
+        var myarray = new Array(      /* create an array with hero name and details */
+          "<h1>Hawkeye</h1><br><p>Hawkeye, AKA Clint Barton has the power of eagle-eye accuracy with his bow!</p>",
+          "<h1>Storm</h1><br><p>Storm, AKA Ororo has the amazing power of altering the weather as she pleases!</p>",
+          "<h1>Wolverine</h1><br><p>Wolverine, AKA James Howlett has wolf-like senses as well as claws in his knuckles!",
+          "<h1>Hulk</h1><br><p>Hulk, AKA Bruce Banner has the power of mutating into an unstoppable superhuman!",
+          "<h1>Superwoman</h1><br><p>Superwoman, AKA Kristin Wells has the power of superhuman speed and strength!</p>",
+          "<h1>Aquaman</h1><br><p>Aquaman, AKA Arthur Curry has the power of superhuman strenght and durability!</p>",
+          "<h1>Ironman</h1><br><p>Ironman, AKA Tony Stark has the power of superhuman strength and the ability to fly thanks to his suit!</p>",
+          "<h1>Spiderman</h1><br><p>Spiderman, AKA Peter Parker has the power to cast webs and climb walls like a spider!</p>",
+          "<h1>Batman</h1><br><p>Batman, AKA Bruce Wayne has the power of super strenght and can fight off crime!</p>",
+          "<h1>Superman</h1><br><p>Superman, AKA Clark Kent has the power to fly as well as his super strength and durability!</p>");
+        var random = myarray[Math.floor(Math.random() * myarray.length)];     /* gnereate a random number which determines a hero from array */
+        document.getElementById("hero").innerHTML = random;
+      }
+    </script>
+  </main>
+  <footer>
+    <details>
+      <summary>&copy; Corey Lynch 2019</summary>
+      <p>All rights reserved</p>
+      <p>Email: <a href="mailto:corey@gmail.com">corey@gmail.com</a></p>
+    </details>
+  </footer>
+</body>
+
+</html>

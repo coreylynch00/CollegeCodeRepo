@@ -1,0 +1,41 @@
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  background: #ffcc99;
+  color: navy;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 0;
+}
+
+header, main, footer {
+  padding: 0.5em;
+}
+
+header {
+  text-align: center;
+  border-bottom: 3px ridge gray;
+}
+
+main::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+footer {
+  border-top: 3px ridge gray;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}

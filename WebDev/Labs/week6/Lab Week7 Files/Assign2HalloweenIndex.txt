@@ -1,0 +1,21 @@
+The Halloween Store
+
+For the little Goblin in all of us!
+
+Welcome to my site.  Please come in and stay awhile
+
+I started this website because Halloween has always been my favourite holiday.  But during the last year, I started selling some of my favourite Halloween products, and they've become quite a hit.
+
+If you click on the personal link, you can browse my favourite Halloween pictures, stories and films.  And if you join my email list, I will keep you up-to-date on all things Halloween.
+
+Product categories
+<!-- add hyperlinks to pages prop.html, specialfx.html and masks.html to the related items below. Assume the pages exist, we will create them later -->
+Props
+Costumes  <!-- add a hyperlink here to a costume shop in Cork -->
+Special Effects
+Masks
+
+My guarantee
+If you are not completely satisfied with everything you buy from my site, you can return it for a full refund. No questions asked!
+
+<!-- add copyright character entity, year and your name here -->

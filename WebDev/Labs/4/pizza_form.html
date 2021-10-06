@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+  <head>
+    <title>Pizza Online Order Form</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <h1>CIT Pizza</h1>
+    <h2>Pizza Order Form</h2>
+    <form method="post" action="https://webdevcit.com/displayvalues.php" target="_blank">
+
+      <p>
+        <label>First Name: </label><input type="text" name="first_name" autocomplete="on" required>
+        <label>Last Name: </label><input type="password" name="last_name" autocomplete="on" required>
+      </p>
+      <p>
+        <label>Phone No: </label><input type="text" name="phone_number" placeholder="0812345678" autocomplete="on" required>
+        <label>Email Address: </label><input type="email" name="email" placeholder="name@domain.com" autocomplete="on" required>
+
+      <p>
+        Pizza Topping:
+          <br>
+        <label><input type="radio" name="pizza_topping" value="ham_mushroom">Ham & Mushroom</label>
+        <label><input type="radio" name="pizza_topping" value="pepperoni">Pepperoni</label>
+        <label><input type="radio" name="pizza_topping" value="supreme">Supreme</label>
+        <label><input type="radio" name="pizza_topping" value="vegetarian">Vegetarian</label>
+      </p>
+
+      <p>
+        Pizza Sauce:
+          <br>
+        <select name="sauce">
+          <option value="tomato" selected>Tomato</option>
+          <option value="pesto">Pesto</option>
+          <option value="secret_sauce">Secret Sauce</option>
+        </select>
+      </p>
+
+      <p>
+        Optional Extras:
+          <br>
+        <label><input type="checkbox" name="extras" value="extra_cheese">Extra Cheese</label>
+        <label><input type="checkbox" name="extras" value="chilli_flakes">Chilli Flakes</label>
+        <label><input type="checkbox" name="extras" value="gluten_free">Gluten Free</label>
+      </p>
+
+      <p>
+        Delivery Instructions:
+          <br>
+        <textarea name="delivery" rows="5" cols="80" placeholder="Your address and directions" required></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Send Order">
+        <input type="reset" value="Cancel Order">
+      </p>
+    </form>
+
+  </body>
+</html>

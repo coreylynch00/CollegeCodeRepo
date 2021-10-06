@@ -1,0 +1,4 @@
+Name: Superman 
+Power: Strength, flight, speed, durability 
+Alter-ego: Clark kent 
+Origin: Krypton

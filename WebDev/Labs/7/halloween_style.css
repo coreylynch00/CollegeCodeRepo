@@ -1,0 +1,80 @@
+* {
+  font-family: sans-serif;
+}
+
+header {
+  padding: 5px;
+  border-bottom: 2px solid orange;
+  background-color: darkorange;
+  background-image: linear-gradient(45deg, orange 30%, darkorange 45%, black);
+}
+
+body {
+  background-color: black;
+  color: grey;
+}
+
+aside {
+  width: 175px;
+  float: left;
+  margin-top: 20px;
+}
+
+main {
+  padding: 15px;
+  overflow: auto;
+}
+
+h1 {
+  font-size: 4em;
+  color: orange;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+}
+
+h2 {
+  font-size: 2em;
+
+}
+
+h2:first-child::first-letter {
+  font-size: 1.8em;
+}
+
+#logo {
+  float: left;
+  margin-right: 2em;
+  height: 10em;
+  width: 10em;
+}
+
+.product {
+  height: 15em;
+  width: 15em;
+}
+
+#slogan {
+  font-size: 1em;
+}
+
+a, a:visited{
+  font-weight: bold;
+  color: orange;
+  border: 2px solid black;
+  background-color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+ul li {
+  margin: 1em;
+  list-style: none;
+}
+
+footer {
+  margin: 5em;
+  font-size: 0.8em;
+  text-align: center;
+}
