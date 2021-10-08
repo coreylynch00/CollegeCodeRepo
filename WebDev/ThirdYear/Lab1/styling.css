@@ -1,0 +1,117 @@
+html {                                                /* all content styled*/
+  background-image: url(images/background1.jpg);
+  background-size: cover;
+}
+
+body {                                               /*all content in body section*/
+  font-family: courier;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.welcome {                                          /*Cork #1 Specialist */
+  text-align: center;
+  color: #c4a683;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-shadow: 4px 4px 4px #000;
+  font-size: 1.5em;
+}
+
+h1 {                                                /*All heaadings*/
+  color: #c4a683;
+  font-size: 100%;
+  font-family: courier;
+  text-decoration: underline;
+}
+
+ul {                                               /*Services*/
+  margin-left: 2em;
+  list-style: none;
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside;
+}
+
+.logo {                                           /*PTS logo*/
+  margin-top: 2em;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #000;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.8);
+}
+
+.services {
+  margin-left: 2em;
+  color: #ed4d46;
+  text-align: center;
+  font-family: fantasy;
+  font-style: oblique;
+  font-size: 150%;
+  text-shadow: 4px 4px 4px black;
+}
+
+.services1 {                                  /*Services text*/
+  background: rgba(0, 0, 0, 0.2);
+  color: #c4a683;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+}
+
+.offer {
+  color: #ed4d46;
+  font-size: 1em;
+}
+
+.dirtbikeimg{
+  color: #ed4d46;
+  font-size: 1em;
+}
+
+.racevideo {
+  text-align: center;
+  font-weight: 1000;
+  color: #ed4d46;
+}
+
+.contact {
+  text-align: center;
+  color: #ed4d46;
+  margin-top: 3em;
+  font-family: fantasy;
+  font-style: oblique;
+  font-size: 150%;
+  text-shadow: 4px 4px 4px black;
+}
+
+.contact1 {                                 /*Conatct text*/
+  background: rgba(0, 0, 0, 0.2);
+  color: #c4a683;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+}
+
+a {
+  color: #ed4d46;
+}
+
+a:hover {
+  color: brown;
+}
+
+.location {
+  color: #ed4d46;
+}
+
+footer small {                            /*Copyright*/
+  padding: 2em;
+  margin: 2em;
+  text-align: right;
+  text-decoration: overline;
+  text-decoration-style: double;
+}

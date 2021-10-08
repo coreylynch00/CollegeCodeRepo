@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+
+<head>
+
+  <title>PTS Motorcycles</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+
+<body>
+
+  <header>
+
+    <img src="images/ptslogo.png" alt="ptslogo" class="logo">
+
+    <!--Image: Supplied by PTS Motorcycles-->
+  </header>
+
+  <main>
+
+    <p class="welcome">
+    CORK'S #1 ROAD & OFF-ROAD SPECIALISTS
+    </p>
+
+    <h1 class="services">Services</h1>
+    <div class="services1">
+      <h2 class="offer">What we have to offer:</h2>
+      <ul>
+        <li>A Wide Variety of Motocross Accessories From Rider to Machine</li>
+        <li>New & Used Parts for All Bikes</li>
+        <li>Servicing & Repairs for Road & Off-Road Bikes</li>
+        <li>Bike Collection & Delivery Services Available</li>
+      </ul>
+    <p>
+      We stock all accessories from a wide variety of premium brands such as Acerbis, Pro Taper, Motul, Fox, Alpinestars, Leatt, and many more...
+    </p>
+    <p>
+      If you have any enquiries visit our Contact section below, we'll be happy to help!
+    </p>
+  </div>
+
+    <h1 class="contact">Contact Us</h1>
+    <div class="contact1">
+      <br>
+      <p>
+        <img src="images/email.png" alt="email"> E-mail: <a href="mailto:ptsbike@gmail.com">ptsbikes@gmail.com</a>
+      </p>
+      <br>
+      <p>
+        <img src="images/phone.png" alt="phone"> Phone: <a href="tel:0214379827">021 437 9827</a>
+      </p>
+      <br>
+      <p>
+        Check out our <a href="https://www.facebook.com/ptsusedbikeparts/">Facebook</a> page!
+      </p>
+      <br>
+      <p>
+        Our Location:
+        <br>
+        <span class="location">Raheens, Ringaskiddy, Co Cork.</span>
+      </p>
+      <p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19730.931891514243!2d-8.390567199999998!3d51.81773535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1574614481577!5m2!1sen!2sie" width="400" height="300"></iframe>
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <small>Copyright &copy; PTS Motorcycles</small>
+  </footer>
+
+</body>
+
+</html>
