@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button
+        android:id="@+id/buttonUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:nextFocusLeft="@+id/buttonLeft"
+        android:nextFocusRight="@+id/buttonRight"
+        android:nextFocusUp="@+id/buttonLeft"
+        android:nextFocusDown="@+id/buttonRight"/>
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:text="B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonLeft"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:nextFocusLeft="@+id/buttonUP"
+        android:nextFocusRight="@+id/buttonDown"
+        android:nextFocusUp="@+id/buttonUP"
+        android:nextFocusDown="@+id/buttonDown"
+
+        />
+
+    <Button
+        android:id="@+id/buttonDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLeft"
+        app:layout_constraintVertical_bias="1.0"
+
+        android:nextFocusLeft="@+id/buttonRight"
+        android:nextFocusRight="@+id/buttonLeft"
+        android:nextFocusUp="@+id/buttonRight"
+        android:nextFocusDown="@+id/buttonLeft"
+        />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:text="D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+
+        android:nextFocusLeft="@+id/buttonDown"
+        android:nextFocusRight="@+id/buttonUP"
+        android:nextFocusUp="@+id/buttonDown"
+        android:nextFocusDown="@+id/buttonUP"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

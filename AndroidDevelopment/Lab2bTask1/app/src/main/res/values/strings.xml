@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab2b</string>
+    <string name="send_button">Open Second Activity</string>
+    <string name="send_button2">Open First Activity</string>
+    <string name="edit_message">Hello Corey!</string>
+    <string name="edit_message2">Hi Corey, Second Activity!</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab2b_exercise</string>
+    <string name="text_edit_main">Here are my friends!</string>
+    <string name="button1">Elon Musk</string>
+    <string name="button2">Valentino Rossi</string>
+    <string name="button3">Bill Gates</string>
+    <string name="elon_heading">Elon Musk</string>
+    <string name="elon_fact">Did you know that at the age of 12, Elon sold his code for a video game called \"Blaster\" to a computer magazine for $500.</string>
+    <string name="rossi_heading">Valentino Rossi</string>
+    <string name="rossi_fact">Rossi is a 9 time Grand Prix World Champion. 7 of those 9 wins were in the premier class. Very impressive!</string>
+    <string name="gates_heading">Bill Gates</string>
+    <string name="gates_fact">Bill Gates is the founder of the most successful tech company ever, Microsoft. He is the world\'s second richest man!</string>
+    <string name="home_button">Home</string>
+</resources>
