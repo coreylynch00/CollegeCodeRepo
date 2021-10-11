@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab3Task3RiddleGame</string>
+    <string name="riddle_easy">What has to be broken before you can use it?</string>
+    <string name="riddle_medium">What falls down but never breaks?</string>
+    <string name="riddle_hard">What English word retains the same pronunciation, even after you take away four of its five letters?</string>
+    <string name="ans_easy">An Egg</string>
+    <string name="ans_medium">Nightfall</string>
+    <string name="ans_hard">Queue</string>
+</resources>
