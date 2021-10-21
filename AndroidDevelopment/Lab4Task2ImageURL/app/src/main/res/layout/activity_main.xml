@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="604dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496">
+
+        <ImageView
+            android:id="@+id/imageViewRossi"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/valentino"
+            android:onClick="openRossi"/>
+
+        <ImageView
+            android:id="@+id/imageViewMarquez"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            app:srcCompat="@drawable/marquez"
+            android:onClick="openMarquez"/>
+
+        <ImageView
+            android:id="@+id/imageViewLorenzo"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            app:srcCompat="@drawable/lorenzo"
+            android:onClick="openLorenzo"/>
+
+        <ImageView
+            android:id="@+id/imageViewPedrosa"
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            app:srcCompat="@drawable/pedrosa"
+            android:onClick="openPedrosa"/>
+
+        <ImageView
+            android:id="@+id/imageViewVinales"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            app:srcCompat="@drawable/vinales"
+            android:onClick="openVinales"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
