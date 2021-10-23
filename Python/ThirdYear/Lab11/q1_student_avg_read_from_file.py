@@ -3,7 +3,7 @@
 # Read data from file and calculate average grade
 
 # Open file
-file = open("studentData.txt", "r")
+file = open("studentData", "r")
 
 # Iterate through each line
 for line in file:
@@ -14,7 +14,7 @@ for line in file:
     # Calculate average - index 1 = grade 1, index 2 = grade 2, etc
     avg = (int(data[1])+int(data[2])+int(data[3]))/3
     # Print data
-    print(name, avg)
+    print(f"{name}, {avg:.2f}")
 
 # Close file
 file.close()
