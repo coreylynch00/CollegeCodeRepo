@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab05</string>
+
+    <string name="cow_string"> A cow will chew for up to eight hours a day, and can move their jaws about 40,000 times a day.</string>
+    <string name="dog_string"> In an interview in 2013, Paul McCartney said that he added a frequency only dogs can hear to the end of the Beatles song ‘A Day in the Life’. So watch your dog when you play the song! How’s that for an amazing dog fact?</string>
+    <string name="dolphin_string"> They are not only the friendliest or caring creatures but also the most intelligent ones. It is believed by scientists that comparing the ratio size of brain to body, dolphins take the 2nd place right after the humans!</string>
+    <string name="goat_string"> Goats were one of the first animals to be tamed by humans and were being herded 9,000 years ago.</string>
+    <string name="horse_string"> Horses can’t breathe through their mouth</string>
+    <string name="rooster_string"> A young male chicken under a year old is called a cockerel.</string>
+    <string name="unicorn_string"> When a unicorn has wings, they are called Pegasi</string>
+    <string name="wolf_string"> One wolf can eat 20 pounds (9 kilograms) of meat at a single sitting</string>
+</resources>
