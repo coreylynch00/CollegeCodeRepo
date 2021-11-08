@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "643828069236",
+    "firebase_url": "https://corey-s-learn-athon-default-rtdb.firebaseio.com",
+    "project_id": "corey-s-learn-athon",
+    "storage_bucket": "corey-s-learn-athon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643828069236:android:8d98d50dcfaa353842f221",
+        "android_client_info": {
+          "package_name": "com.example.androiddevassign1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643828069236-3e6ag7g229tv5mdt8711a3taj230iin1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdoAXS4s1bPE0Re8BvZH-FRkmpCnk7wWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643828069236-3e6ag7g229tv5mdt8711a3taj230iin1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
