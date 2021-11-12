@@ -1,0 +1,161 @@
+html {
+  height: 100%;
+}
+
+/*This styles the entire body section of the webpage*/
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-image: url(images/background1.png);
+  background-size: cover;
+}
+
+/*Styles everything within main - heading, score and buttons - ID as unique*/
+.main_container {
+  width: 70%;
+  height: 80%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*Styles the heading - H1 - used ID as there is only 1 H1 on the page*/
+.welcome_heading {
+  color: red;
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/*Styles the Images on the Login page (icons)*/
+.icons {
+  display: inline-block;
+  width: 5%;
+  background-color: red;
+  border-radius: 1em;
+}
+
+/*Styles the user login prompt*/
+#login_message {
+  color: red;
+  width: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 1em;
+  text-align: center;
+  font-weight: bold;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+/*Styles the container for the error message if user credentials are incorrect*/
+#error_message_container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*Styles the error message displayed to user if login credentials are incorrect*/
+#error_message {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+/*Styles the form section - textboxes and buttons*/
+#form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*Styles the form section - textboxes and buttons*/
+.login_field {
+  border: none;
+  border-bottom: 2em;
+  margin-bottom: 2em;
+  border-radius: 2em;
+  font-size: 1em;
+  padding: 3%;
+}
+
+/*Styles the buttons to login/reset*/
+.button {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 1em;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  cursor: pointer;
+  outline: none;
+}
+
+/*Styles the registration form in register.html*/
+#registration_form {
+  color: red;
+  text-align: center;
+  padding: 5%;
+}
+
+/*Styles the headings within the form*/
+.form_header {
+  color: red;
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/*Styles any label who's parent is form*/
+form > label {
+  color: red;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+/*Styles any input who's parent is form*/
+form > input {
+  border-radius: 1em;
+}
+
+#register_message {
+  color: red;
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-weight: bold;
+}
+
+/*Styles any anchor being HOVERED who's parent has an ID of register_message*/
+#register_message > a:hover {
+  color: green;
+}
+/*Styles any anchor being CLICKED who's parent has an ID of register_message*/
+#register_message > a:active {
+  color: blue;
+}
+/*Styles any anchor which already VISITED who's parent has an ID of register_message*/
+#register_message > a:visited {
+  color: yellow;
+}
+
+footer small {
+  color: red;
+  font-family: Copperplate, Papyrus, fantasy;
+}

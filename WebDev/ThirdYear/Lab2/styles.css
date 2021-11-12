@@ -1,0 +1,142 @@
+body {
+  background-color: grey;
+}
+
+/*First Nav Bar*/
+.head_nav_bar {
+  background-color: #333;
+  overflow: hidden;
+  text-align: right;
+  border-radius: 1em;
+}
+
+.head_nav_bar li {
+  display:inline-block;
+}
+
+.head_nav_bar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.head_nav_bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.head_nav_bar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.main_container {
+  background-color: white;
+  border-radius: 1em;
+}
+
+/*Heading*/
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+}
+h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Second Nav Bar*/
+.main_nav_bar {
+  background-color: #949494;
+  overflow: hidden;
+  text-align: left;
+  border-radius: 1em;
+}
+
+.main_nav_bar li {
+  display:inline-block;
+}
+
+.main_nav_bar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0em 2em;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.main_nav_bar a:hover {
+  background-color: #333;
+  color: black;
+}
+
+.main_nav_bar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*Homepage image*/
+#lebrun_image {
+  float: left;
+  padding-right: 1em;
+  height: 27em;
+}
+ /*Details*/
+#price {
+  color: red;
+  font-weight: bolder;
+  font-size: 2em;
+}
+
+.btns {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/*Similar products*/
+.sim_prod_img {
+  width: 5em;
+  height: 5em;
+  display: inline-block;
+}
+
+.copyright_message {
+  background-color: #333;
+  color: #f2f2f2;
+}
+
+#product1 {
+  padding: 1em;
+}
+
+#product2 {
+  padding: 1em;
+}
+
+#product3 {
+  padding: 1em;
+}
+
+#product4 {
+  padding: 1em;
+}
+
+/*Page 2 specific styling*/
+#registration_form {
+  padding-left: 1em;
+}
+
+#submit_caption {
+  text-align: center;
+  font-weight: bolder;
+}

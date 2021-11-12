@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the layout viewport to the ideal viewport, set the zoom to 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ottergram</title>
+    <!-- normalize.css helps the CSS you write display consistently across browsers. The link tag for
+         normalize.css before the <link> tag for styles.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo-text">Ottergram</h1>
+    </header>
+    <main class="main-content">
+        <ul class="thumbnail-list">
+            <li class="thumbnail-item" id="barry-otter">
+                <!-- Add data attributes for the anchor tag, using custom data attributes to design what HTML elements
+                     on the page the JavaScript interacts with -->
+                <a href="img/otter1.jpg" data-image-role="trigger" data-image-title="Stayin' Alive"
+                   data-image-url="img/otter1.jpg">
+                    <img class="thumbnail-image" src="img/otter1.jpg" ALT="Barry the otter"/>
+                    <!-- class attribute is added to identify a group of HTML elements -->
+                    <span class="thumbnail-title"> Barry </span>
+                </a>
+            </li>
+            <li class="thumbnail-item">
+                <!-- Add data attributes for the anchor tag, using custom data attributes to design what HTML elements
+                     on the page the JavaScript interacts with -->
+                <a href="img/otter2.jpg" data-image-role="trigger" data-image-title="How Deep Is Your Love"
+                   data-image-url="img/otter2.jpg">
+                    <img class="thumbnail-image" src="img/otter2.jpg" ALT="Robin the otter"/>
+                    <span class="thumbnail-title"> Robin </span>
+                </a>
+            </li>
+            <li class="thumbnail-item">
+                <!-- Add data attributes for the anchor tag, using custom data attributes to design what HTML elements
+                     on the page the JavaScript interacts with -->
+                <a href="img/otter3.jpg" data-image-role="trigger" data-image-title="You Should Be Dancing"
+                   data-image-url="img/otter3.jpg">
+                    <img class="thumbnail-image" src="img/otter3.jpg" ALT="Maurice the otter"/>
+                    <span class="thumbnail-title"> Maurice </span>
+                </a>
+            </li>
+            <li class="thumbnail-item">
+                <!-- Add data attributes for the anchor tag, using custom data attributes to design what HTML elements
+                     on the page the JavaScript interacts with -->
+                <a href="img/otter4.jpg" data-image-role="trigger" data-image-title="Night Fever"
+                   data-image-url="img/otter4.jpg">
+                    <img class="thumbnail-image" src="img/otter4.jpg" ALT="Lesley the otter"/>
+                    <span class="thumbnail-title"> Lesley </span>
+                </a>
+            </li>
+            <li class="thumbnail-item">
+                <!-- Add data attributes for the anchor tag, using custom data attributes to design what HTML elements
+                     on the page the JavaScript interacts with -->
+                <a href="img/otter5.jpg" data-image-role="trigger" data-image-title="To Love Somebody"
+                   data-image-url="img/otter5.jpg">
+                    <img class="thumbnail-image" src="img/otter5.jpg" ALT="Barbara the otter"/>
+                    <span class="thumbnail-title"> Barbara </span>
+                </a>
+            </li>
+        </ul>
+        <div class="detail-image-container">
+            <!-- Wrapper element constrains the size of the image and serves as a reference for positioning the title -->
+            <div class="detail-image-frame">
+                <!-- Add data attributes for the detail image -->
+                <img class="detail-image" src="img/otter1.jpg" alt="" data-image-role="target"/>
+                <span class="detail-image-title" data-image-role="title">Stayin' Alive</span>
+            </div>
+        </div>
+    </main>
+    <!-- Add JavaScript to make the page interactive -->
+    <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title in browser tab -->
+  <title>Rock, Paper, Scissors Warzone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="game_styles.css">
+  <!-- Link JS file for functionality -->
+  <script defer src="game.js"></script>
+</head>
+
+<body>
+  <!-- Main containing H1, H3, and buttons -->
+  <main id="main_container">
+    <!-- Welcome heading -->
+    <h1 id="welcome_heading">Welcome to Rock, Paper, Lightsaber!</h1>
+
+    <!-- Score counter -->
+    <h3 id="score_count">
+      Player <span id="player_score">0</span> - <span id="computer_score">0</span> Computer
+    </h3>
+
+    <!-- Buttons with embedded clickable image to choose option -->
+    <input type="image" src="images/rock.png" alt="a hand making a rock shape" name="rock" class="options">
+    <input type="image" src="images/paper.png" alt="a hand making a paper shape" name="paper" class="options">
+    <input type="image" src="images/lightsaber.png" alt="a hand making a scissors shape" name="scissors" class="options">
+
+    <!-- tried to get the winner of each round to display here with JS but could not get working -->
+    <div class="result"></div>
+  </main>
+  <footer>
+    <!-- Copyright -->
+    <small class="copyright">Copyright &copy; to Corey Lynch.</small>
+  </footer>
+</body>
+
+</html>

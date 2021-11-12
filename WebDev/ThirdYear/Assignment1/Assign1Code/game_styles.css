@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+}
+
+/*This styles the entire body section of the webpage*/
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-image: url(images/background1.png);
+  background-size: cover;
+}
+
+/*Styles everything within main - heading, score and buttons - ID as unique*/
+#main_container {
+  width: 70%;
+  height: 80%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*Styles the heading - H1 - used ID as there is only 1 H1 on the page*/
+#welcome_heading {
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: red;
+}
+
+/*Styles the score counter - ID as is unique to the page*/
+#score_count {
+  background-color: red;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 1em;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+/*Styles the button to choose player move - class as more than one button to be styled*/
+.options {
+  width: 7%;
+  padding: 1em;
+  border-radius: 1em;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+footer small {
+  color: red;
+  font-family: Copperplate, Papyrus, fantasy;
+}

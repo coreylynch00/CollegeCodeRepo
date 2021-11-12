@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Art Store Homepage</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="head_nav_bar">
+      <ul>
+        <li><a href="pageTwo.html">My Account</a></li>
+        <li><a href="">Wish List</a></li>
+        <li><a href="">Shopping Cart</a></li>
+        <li><a href="">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main_container">
+    <h1 class="header">Art Store</h1>
+    <nav class="main_nav_bar">
+      <ul>
+        <li><a href="pageOne.html">Homepage</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Art Works</a></li>
+        <li><a href="">Artists</a></li>
+      </ul>
+    </nav>
+    <h2 id="art_piece">Self-portrait in a Straw Hat</h2>
+    <p>By <a href="https://en.wikipedia.org/wiki/Élisabeth_Vigée_Le_Brun">Elisabeth Vigee LeBrun</a></p>
+    <br>
+      <img id="lebrun_image" src="start/images/113010.jpg" alt="An self-potrait of Elisabeth Vigee LeBrun in a straw hat.">
+      <p id="lebrun_description">
+        The painting appears, after cleaning, to be an autograph replica of a picture. The original of which was painted in Brussels in 1782 in free imitation of Ruben's 'Chapeau de Paille'
+        which leBrun had seen in Antwerp. It was exhibited in Paris in 1782 at the Salon de la Correspondance. LeBrun's original is recorded in a private collection in France.
+      </p>
+      <p id="price">$700</p>
+      <button class="btns" id="wish_button" onclick="window.location.href='/wishlist.html'">Add to Wish List</button>
+      <button class="btns" id="cart_button" onclick="window.location.href='/cart.html'">Add to Shopping Cart</button>
+      <h3 id="deatils_heading">Product Details</h3>
+      <hr>
+      <table id="details_table">
+      <tr>
+        <td>Date:</td>
+        <td>1782</td>
+      </tr>
+      <tr>
+        <td>Medium:</td>
+        <td>Oil on canvas</td>
+      </tr>
+      <tr>
+        <td>Dimensions:</td>
+        <td>98cm x 71cm</td>
+      </tr>
+      <tr>
+        <td>Home:</td>
+        <td><a href="">National Gallery, London</a></td>
+      </tr>
+      <tr>
+        <td>Genres:</td>
+        <td><a href="">Realism, </a><a href="">Rococo</a></td>
+      </tr>
+      <tr>
+        <td>Subjects:</td>
+        <td><a href="">People, </a><a href="">Arts</a></td>
+    </table>
+    <h3 id="similar_header">Similar Products</h3>
+    <hr>
+    <div id="product1">
+      <img class="sim_prod_img" src="start/images/tiny/116010.jpg" alt="Self-portrait of an artist holding a thistle.">
+      <a href="">Artist Holding a Thistle</a>
+      <br>
+      <button class="view_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="wish_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="cart_button" onclick="window.location.href=''">Add to Shopping Cart</button>
+    <div id="product2">
+      <img class="sim_prod_img" src="start/images/tiny/120010.jpg" alt="Portrait of Elenor of Toledo with a young child.">
+      <a href="">Portrait of Elenor of Toledo</a>
+      <br>
+      <button class="view_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="wish_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="cart_button" onclick="window.location.href=''">Add to Shopping Cart</button>
+    </div>
+    <div id="product3">
+      <img class="sim_prod_img" src="start/images/thumbs/107010.jpg" alt="Madame de Pompadour laying down in a large ball dress.">
+      <a href="">Madame de Pompadour</a>
+      <br>
+      <button class="view_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="wish_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="cart_button" onclick="window.location.href=''">Add to Shopping Cart</button>
+    </div>
+    <div id="product4">
+      <img class="sim_prod_img" src="start/images/thumbs/106020.jpg" alt="Portrait of a young woman wearing pearl earings.">
+      <a href="">Girl with a Pearl Earing</a>
+      <br>
+      <button class="view_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="wish_button" onclick="window.location.href=''">Add to Wish List</button>
+      <button class="cart_button" onclick="window.location.href=''">Add to Shopping Cart</button>
+    </div>
+  </main>
+  <footer>
+    <small class="copyright_message">
+      All images are copyright to their owners. This is just a hypothetical site &copy; 2014 Copyright Art Store
+    </small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Title in browser tab -->
+  <title>Rock, Paper, Scissors Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS file for styling -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <!-- Main containing H1, IMG, H2, Form -->
+  <main class="main_container">
+    <!-- Welcome heading -->
+    <h1 class="welcome_heading">Welcome to Rock, Paper, Lightsaber</h1>
+
+    <!-- Images -->
+    <img class="icons" src="images/rock.png" alt="a hand making a rock shape">
+    <img class="icons" src="images/paper.png" alt="a hand making a paper shape">
+    <img class="icons" src="images/lightsaber.png" alt="a hand making a scissors shape">
+
+    <!-- Form to take user details -->
+    <form id="registration_form">
+      <!-- User details -->
+      <h3 class="form_header">1. Your Account Details</h3>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Email"><br>
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" placeholder="Username"><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Password"><br>
+
+      <!-- Accept T&C's and register -->
+      <label for="t&c">I have read and agree to the Terms and Conditions and Privacy Policy</label>
+      <input type="checkbox" name="t&c" value="check" id="t&c"><br>
+      <input type="submit" class="button" id="register">
+    </form>
+  </main>
+  <footer>
+    <!-- Copyright -->
+    <small class="copyright">Copyright &copy; to Corey Lynch.</small>
+  </footer>
+</body>
+</html>

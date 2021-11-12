@@ -1,0 +1,216 @@
+/*
+ *  Atomic Styling
+*/
+
+/* ---------------------------------------Font Definitions------------------------------------------------*/
+/* Add an @font-face declaration for the lakeshore font family */
+@font-face {
+    font-family: 'lakeshore';
+    src: url('fonts/LAKESHOR-webfont.eot');
+    src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LAKESHOR-webfont.woff') format('woff'),
+         url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+         url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Add an @font-face declaration for the Airstream font family */
+@font-face {
+    font-family: 'airstreamregular';
+    src: url("fonts/Airstream-webfont.eot");
+    src: url("fonts/Airstream-webfont.eot?#iefix") format('embedded-opentype'),
+         url("fonts/Airstream-webfont.woff") format('woff'),
+         url("fonts/Airstream-webfont.ttf") format('truetype'),
+         url("fonts/Airstream-webfont.svg#airstreamregular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------------------------------------- Styling Rules ------------------------------------------------*/
+
+/* class selector for the thumbnail title */
+.thumbnail-title{
+    background: rgb(96, 125, 139); /* background color */
+    /*background: rgba(69, 151, 58, 1);
+    background: rgb(69, 151, 58);*/
+    color: rgb(202, 238, 255); /* foreground color */
+
+    display: block; /* the box for all elements of the class .thumbnail-title so that they occupy the entire width
+                       allowed by their containing element */
+    margin: 0; /* set the margin for the thumbnail titles to 0 */
+    padding: 4px 10px; /*4 pixels is applied to both top and bottom, 10 pixels is applied to both left and right */
+
+    font-size: 18px; /* Override body's font-size and use a large font */
+}
+
+/* Make the thumbnails fit in window */
+.thumbnail-image{
+    width : 100%; /* constrains the width to the width of its container */
+    display: block; /* Remove the space between the image and its title */
+}
+
+/* an element selector, removes the underline for the thumbnail titles */
+a {
+    text-decoration: none;
+}
+
+/* Set color for the thumbnail item border */
+.thumbnail-item{
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8); /*provide a fallback value */
+
+    /*display: block;*/ /* remove whitespace that each thumbnail item has to accommodate items in the list,
+     causes the browser to render a line break before and after the element, elements flow from top to bottom*/
+
+    display: inline-block; /* box is drawn as if you declared display:block but without the line breaks, elements flow
+                              from left to right*/
+
+    /* The display property tells the browser how an element should flow in the layout */
+    /* width: 120px; */
+
+    min-width: 120px; /* remove the variations in size that are causing the strange layout */
+    max-width: 120px; /* remove the variations in size that are causing the strange layout */
+}
+
+/*
+.thumbnail-item + .thumbnil-item {
+    margin-top: 10px; /* Add a margin to the top of each list item except the first */
+/*}
+*/
+
+#barry-otter {
+    background: green; /* ID selector has the highest specificity */
+}
+
+/* Remove the bullets in the thumbnail list */
+.thumbnail-list{
+    list-style: none;
+    padding: 0; /* images are no longer indented */
+    white-space: nowrap; /* Prevent elements from wrapping */
+    overflow-x: auto; /* tells the browser that it should add a scrollbar along the horizontal space */
+    flex: 0 1 auto; /* it takes the default amount of space*/
+    order: 2; /* To draw the list after any of its siblings that have a lower value for order - such as
+                 .detail-image-container which is using the default */
+    display: flex; /* makes the list as a flex container */
+}
+
+/* Styling the header */
+.logo-text{
+    background: white; /* Give the header a white background */
+
+    text-align: center; /* Center the text inside the .logo-text element */
+    text-transform: uppercase; /* Transform the text to upper case */
+    font-size: 37px; /* set the font size */
+    font-family: lakeshore;
+}
+
+.detail-image {
+    width: 90%;
+}
+
+.detail-image-title {
+    color: white;
+    font-size: 40px; /* set the font size to be four times the default */
+    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px; /* Add a shadow to text */
+    /* the text-shadow property accepts a color for the shadow, a pair of lengths for offset (i.e. whether the
+       shadow falls above or below and to the left or right of the text), and a length for the blur radius. 1px to
+       right, 2px below the text (negative values would place it to the left or above the text). */
+    font-family: airstreamregular;
+    position: absolute; /* the browser will place it at a precise location within .detail-image-frame */
+    bottom: -16px; /* put title just below the bottom edge of .detail-image-frame */
+    left: 4px; /* put title a little inside the left edge of .detail-image-frame */
+}
+
+.detail-image-frame {
+    text-align: center; /* to center the content without flexbox, but it only works horizontally */
+    position: relative; /* to remain the frame in normal flow and want it to serve as the container for an absolutely
+                           positioned descendant.*/
+}
+
+.detail-image-container {
+    flex: 1 1 auto; /* it grows to fill the space left over */
+    display: flex;  /* To make this container as a flex container */
+    justify-content: center; /* draw its flex items in the center of the main axis (horizontally) */
+    align-items: center; /* draw its flex items in the center of the cross axis (vertically) */
+}
+
+/* .main-header is a flex item */
+.main-header {
+    flex: 0 1 auto; /* .main-header will take up only as much space as it needs, and no more. I do not want to grow
+                       any larger; I will shrink as needed; please calculate size for me*/
+}
+
+/* .main-content is another flex item */
+.main-content {
+    flex: 1 1 auto; /* .main-content element will grow to take up all the space not needed for the .main-header*/
+    display: flex; /* make .main-content a flex container, in this way, the .thumbnail-list takes the default amount of space
+                      and .detail-image-container grows to fill the space left over.*/
+    flex-direction: column; /* change the .main-content to a flex container with a vertical main axis */
+}
+
+html, body {
+    /* Setting the height to 100% for both of them allows the content to fill the browser or device window */
+    height: 100%;
+}
+
+/* Set the font size for the body element */
+body {
+    display: flex; /* Make body element a flex container */
+    flex-direction: column; /* Swaps the main and cross axes for the flex container */
+    font-size: 10px;
+    background: rgb(149, 194, 215);
+    /*background: rgb(206, 231, 243);*/
+}
+
+/* -------------------------------------- Media Queries -------------------------------------------------------- */
+
+/* It will activate styles when being viewed on any kind of device when the viewport is at least 768 pixels wide,
+   which is a common width for tablets.
+ */
+@media all and (min-width: 768px) {
+   .main-content {
+       flex-direction: row; /* This lets the thumbnails and the detail image sit next to one another */
+       overflow: hidden; /* The thumbnails should continue to scroll independently of the browser window */
+   }
+
+   .thumbnail-list {
+       flex-direction: column; /* the thumbnails need to be displayed in a column */
+       order: 0; /* The thumbnails follows the source order and is drawn before the .detail-image-container */
+       margin-left: 20px;
+   }
+
+   /*The layout looks sharp whether the viewport is narrower or wider after sizing and spacing */
+   .thumbnail-item {
+       max-width: 260px;
+   }
+
+   .thumbnail-item + .thumbnail-item {
+       margin-top: 20px;
+   }
+}
+
+/* The layout changes according to orientation and not based on width */
+@media screen and (orientation: portrait) {
+    .thumbnail-list {
+        width: 100%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .thumbnail-list {
+        flex-direction: column; /* the thumbnails need to be displayed in a column */
+        order: 0; /* The thumbnails follows the source order and is drawn before the .detail-image-container */
+        margin-left: 20px;
+    }
+
+    /*The layout looks sharp whether the viewport is narrower or wider after sizing and spacing */
+    .thumbnail-item {
+        max-width: 260px;
+    }
+
+    .thumbnail-item + .thumbnail-item {
+        margin-top: 20px;
+    }
+}
+
