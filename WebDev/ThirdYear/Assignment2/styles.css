@@ -1,0 +1,237 @@
+html {
+  font-family:monospace;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+
+/*  STYLES THE NAV BAR AND ALL COMPONENTS WITHIN NAV BAR  */
+.logo {
+  width: 250px;
+  height: 60px;
+  float: left;
+  padding-left: 5%;
+}
+
+/*  STYLES THE BACKGROUND COLOUR OF THE NAV BAR  */
+.nav_bar {
+  background-color: #FFFFFF;
+}
+
+/*  STYLES THE LIST IN THE NAV BAR  */
+.nav_bar ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding-right: 5%;
+}
+
+/*  STYLES EACH ITEM IN NAV BAR LIST  */
+.nav_bar li {
+  float: right;
+  font-size: 2em;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+/*  STYLES EACH LINK TO ANOTHER PAGE IN NAV BAR  */
+.nav_bar li a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*  STYLES LINKS WHEN THEY ARE HOVERED  */
+.nav_bar li a:hover {
+  color: #D2042D;
+}
+
+/*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - HOME LINK STYLING  */
+#home {
+  color: #D2042D;
+}
+
+#home:hover {
+  color: black;
+}
+
+#home:active {
+  color: black;
+}
+
+#home:visited {
+  color: ##D2042D;
+}
+
+/*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - ABOUT LINK STYLING  */
+#about {
+  color: #D2042D;
+}
+
+#about:hover {
+  color: black;
+}
+
+#about:active {
+  color: black;
+}
+
+#about:visited {
+  color: ##D2042D;
+}
+
+/*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - SERVICES LINK STYLING  */
+#services {
+  color: #D2042D;
+}
+
+#services:hover {
+  color: black;
+}
+
+#services:active {
+  color: black;
+}
+
+#services:visited {
+  color: ##D2042D;
+}
+
+/*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - CONTACT LINK STYLING  */
+#contact {
+  color: #D2042D;
+}
+
+#contact:hover {
+  color: black;
+}
+
+#contact:active {
+  color: black;
+}
+
+#contact:visited {
+  color: #D2042D;
+}
+
+/*  SETS BACKGROUND IMAGE IN MAIN AND STYLES ON HOME PAGE */
+.background {
+  background-image: url("images/background.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+/*  STYLES THE TEXT WITHIN MAIN THAT APPEARS OVER THE IMAGE ON HOME PAGE */
+.main_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/*  STYLES THE H1 WHICH APPEARS ON THE IMAGE ON HOMEPAGE  */
+.heading_one_main {
+  font-size: 6em;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/*  STYLES THE H2 WHICH APPEARS ON THE IMAGE ON HOME PAGE  */
+.heading_two_main {
+  font-size: 2em;
+  font-style: italic;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/*  STYLES ALL ELEMENTS WITHIN THE FOOTER TAG  */
+footer {
+  text-align: center;
+}
+
+/*  STYLES THE DIV CONTAINER IN WHICH P TAGS ARE WRAPPED IN  */
+#p_container {
+  background-color: #D2042D;
+}
+
+/*  STYLES EACH PARAGRAPH WHICH APPEARS AT FOOT OF HOME PAGE  */
+.foot_p {
+  display: inline-block;
+  font-size: 1.4em;
+  border-right: 1px solid;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  color: white;
+  border-color: white;
+}
+
+/*  STYLES THE FURTHERST MOST LEFT ELEMENT TO INCLUDE A BORDER LINE  */
+.foot_p:first-child {
+  border-left: 1px solid #bbb;
+  border-color: white;
+}
+
+/*  STYLE FOR CONTACT PAGE  */
+/*  STYLES ICONS  */
+.contact_icon {
+  width: 30px;
+  height: 30px;
+}
+
+/*  STYLES THE CONTAINER FOR THE INLINE P TAGS  */
+#contact_container {
+  background-color: #D2042D;
+  padding: 1em;
+}
+
+/*  ALIGNS THE P TAGS AND THE ICONS FOR CONTACT  */
+.contact_p {
+  display: inline-block;
+  font-size: 1.4em;
+  border-right: 1px solid;
+  color: white;
+  border-color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 1.5%;
+  padding-top: 1.5%;
+}
+
+/*  STYLES EACH LINK FOR EMAIL, PHONE AND FACEBOOK  */
+.contact_p a {
+  color: black;
+}
+
+.contact_p a:hover {
+  color: white;
+}
+
+.contact_p a:active {
+  color: black;
+}
+
+.contact_p a:visited {
+  color: white;
+}
+
+/*  STYLES THE LOCATION PARAGRAPH  */
+#location_p {
+  font-size: 1.4em;
+  color: black;
+}
+
+/*  STYLES THE LOCATION ITSELF  */
+#location {
+  color: #D2042D;
+  text-shadow: 1px 1px 1px grey;
+  font-weight: bold;
+}
