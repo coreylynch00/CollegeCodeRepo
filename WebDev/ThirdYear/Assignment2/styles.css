@@ -7,8 +7,7 @@ html {
 
 /*  STYLES THE NAV BAR AND ALL COMPONENTS WITHIN NAV BAR  */
 .logo {
-  width: 250px;
-  height: 60px;
+  max-width: 13%;
   float: left;
   padding-left: 5%;
 }
@@ -223,6 +222,11 @@ footer {
   color: white;
 }
 
+#map {
+  width: 400px;
+  height: 300px;
+}
+
 /*  STYLES THE LOCATION PARAGRAPH  */
 #location_p {
   font-size: 1.4em;
@@ -234,4 +238,135 @@ footer {
   color: #D2042D;
   text-shadow: 1px 1px 1px grey;
   font-weight: bold;
+}
+
+/*  STYLING FOR THE SERVICES PAGE  */
+
+/*  SETS BACKGROUND IMAGE IN MAIN AND STYLES ON HOME PAGE */
+.secondary_background {
+  background-image: url("images/services.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+/*  STYLES THE TEXT WITHIN MAIN THAT APPEARS OVER THE IMAGE ON SERVICES PAGE */
+.secondary_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+/*  SET WIDTH OF TABLE */
+table {
+  width: 100%;
+}
+
+/*  STYLE BORDER AND TEXT   */
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  color: white;
+  table-layout: fixed;
+}
+
+/*  STYLES HEADING ROW  */
+table, th {
+  padding: 3.4%;
+}
+/*  STYLE BACKGROUND  */
+th, td {
+  background-color: #D2042D;
+}
+
+/*  STYLE TABLE HEADINGS  */
+#table_headings {
+  font-size: 1.8em;
+}
+
+/*  CHANGE TABLE DATA FONT SIZE  */
+td {
+  font-size: 1.5em;
+}
+
+/*  STYLE T&C AT END OF TABLE  */
+#table_subject {
+  float: left;
+  font-style: italic;
+  font-size: 1.2em;
+  padding: 1.3%;
+}
+
+/*  STYLING ABOUT US PAGE  */
+
+.faq-heading {
+    padding: 2.2%;
+    background-color: #D2042D;
+    color: white;
+}
+
+.faq-container {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body {
+    margin: auto;
+    /* text-align: center; */
+   width: 50%;
+   padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }
