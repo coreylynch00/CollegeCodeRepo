@@ -1,11 +1,11 @@
-var faq = document.getElementsByClassName("faq-page");
+var faq = document.getElementsByClassName("faq_page");
 var i;
 for (i = 0; i < faq.length; i++) {
+    /* EVENT LISTENER TO DETERMINE WHICH FAQ IS CLICKED */
     faq[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
+        /* SWITCH BETWEEN ACTIVE CLASS TO HIGHLIGHT FAQ WHEN IT IS CLICKED ON */
         this.classList.toggle("active");
-        /* Toggle between hiding and showing the active panel */
+        /* HIDE/SHOW THE FAQ THAT IS CLICKED ON */
         var body = this.nextElementSibling;
         if (body.style.display === "block") {
             body.style.display = "none";

@@ -1,13 +1,13 @@
 html {
   font-family:monospace;
   background-color: #FFFFFF;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 /*  STYLES THE NAV BAR AND ALL COMPONENTS WITHIN NAV BAR  */
 .logo {
-  max-width: 13%;
+  max-width: 15%;
   float: left;
   padding-left: 5%;
 }
@@ -27,7 +27,7 @@ html {
 /*  STYLES EACH ITEM IN NAV BAR LIST  */
 .nav_bar li {
   float: right;
-  font-size: 2em;
+  font-size: 2vw;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -35,7 +35,7 @@ html {
 /*  STYLES EACH LINK TO ANOTHER PAGE IN NAV BAR  */
 .nav_bar li a {
   color: black;
-  padding: 14px 16px;
+  padding: 1vw 2vw;
   text-decoration: none;
   display: block;
 }
@@ -59,7 +59,7 @@ html {
 }
 
 #home:visited {
-  color: ##D2042D;
+  color: #D2042D;
 }
 
 /*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - ABOUT LINK STYLING  */
@@ -76,7 +76,7 @@ html {
 }
 
 #about:visited {
-  color: ##D2042D;
+  color: #D2042D;
 }
 
 /*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - SERVICES LINK STYLING  */
@@ -93,7 +93,7 @@ html {
 }
 
 #services:visited {
-  color: ##D2042D;
+  color: #D2042D;
 }
 
 /*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - CONTACT LINK STYLING  */
@@ -117,7 +117,7 @@ html {
 .background {
   background-image: url("images/background.jpg");
   background-color: #cccccc;
-  height: 500px;
+  height: 33vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,16 +136,26 @@ html {
   text-shadow: 2px 2px 2px black;
 }
 
-/*  STYLES THE H1 WHICH APPEARS ON THE IMAGE ON HOMEPAGE  */
+/*  STYLES THE H1 WHICH APPEARS ON THE IMAGE ON EACH PAGE  */
 .heading_one_main {
-  font-size: 6em;
+  font-size: 4vw;
   font-style: italic;
   text-transform: uppercase;
+  animation-name: example;
+  animation-duration: 3s;
 }
 
-/*  STYLES THE H2 WHICH APPEARS ON THE IMAGE ON HOME PAGE  */
+/*  ANIMATION - HEADING ONE ON EACH PAGE CYCLES COLOURS   */
+@keyframes example {
+  0%   {color:white;}
+  33%  {color:#D2042D;}
+  66%  {color:white;}
+  100% {color:#D2042D;}
+}
+
+/*  STYLES THE H2 WHICH APPEARS ON THE IMAGE ON EACH PAGE  */
 .heading_two_main {
-  font-size: 2em;
+  font-size: 2vw;
   font-style: italic;
   background: rgba(0, 0, 0, 0.4);
 }
@@ -163,7 +173,7 @@ footer {
 /*  STYLES EACH PARAGRAPH WHICH APPEARS AT FOOT OF HOME PAGE  */
 .foot_p {
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.25vw;
   border-right: 1px solid;
   padding-left: 3%;
   padding-right: 3%;
@@ -179,23 +189,26 @@ footer {
   border-color: white;
 }
 
+/*****************************************************************************/
+
 /*  STYLE FOR CONTACT PAGE  */
+
 /*  STYLES ICONS  */
 .contact_icon {
-  width: 30px;
-  height: 30px;
+  width: 1.5vw;
+  height: 1.5vw;
 }
 
 /*  STYLES THE CONTAINER FOR THE INLINE P TAGS  */
 #contact_container {
   background-color: #D2042D;
-  padding: 1em;
+  padding: 0.85vw;
 }
 
 /*  ALIGNS THE P TAGS AND THE ICONS FOR CONTACT  */
 .contact_p {
   display: inline-block;
-  font-size: 1.4em;
+  font-size: 1.2vw;
   border-right: 1px solid;
   color: white;
   border-color: white;
@@ -203,6 +216,12 @@ footer {
   padding-right: 3%;
   padding-bottom: 1.5%;
   padding-top: 1.5%;
+}
+
+/*  STYLES THE FURTHERST MOST LEFT ELEMENT TO INCLUDE A BORDER LINE  */
+.contact_p:first-child {
+  border-left: 1px solid #bbb;
+  border-color: white;
 }
 
 /*  STYLES EACH LINK FOR EMAIL, PHONE AND FACEBOOK  */
@@ -223,13 +242,13 @@ footer {
 }
 
 #map {
-  width: 400px;
-  height: 300px;
+  width: 30vw;
+  height: 20vw;
 }
 
 /*  STYLES THE LOCATION PARAGRAPH  */
 #location_p {
-  font-size: 1.4em;
+  font-size: 1.2vw;
   color: black;
 }
 
@@ -240,13 +259,15 @@ footer {
   font-weight: bold;
 }
 
+/*****************************************************************************/
+
 /*  STYLING FOR THE SERVICES PAGE  */
 
 /*  SETS BACKGROUND IMAGE IN MAIN AND STYLES ON HOME PAGE */
 .secondary_background {
   background-image: url("images/services.jpg");
   background-color: #cccccc;
-  height: 500px;
+  height: 33vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,8 +301,13 @@ table, th, td {
 
 /*  STYLES HEADING ROW  */
 table, th {
-  padding: 3.4%;
+  padding: 3.5%;
+  /*  Removing border from table headings  */
+  border: 0;
+  /*  Replacing border with just a border on the right of each column to keep pages consistent  */
+  border-right: 1px solid white;
 }
+
 /*  STYLE BACKGROUND  */
 th, td {
   background-color: #D2042D;
@@ -289,84 +315,88 @@ th, td {
 
 /*  STYLE TABLE HEADINGS  */
 #table_headings {
-  font-size: 1.8em;
+  font-size: 1.55vw;
 }
 
 /*  CHANGE TABLE DATA FONT SIZE  */
 td {
-  font-size: 1.5em;
+  font-size: 1.2vw;
 }
 
 /*  STYLE T&C AT END OF TABLE  */
 #table_subject {
   float: left;
   font-style: italic;
-  font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1vw;
   padding: 1.3%;
 }
 
+/*****************************************************************************/
+
 /*  STYLING ABOUT US PAGE  */
 
-.faq-heading {
-    padding: 2.2%;
-    background-color: #D2042D;
-    color: white;
+/*  STYLE FAQ HEADING  */
+.faq_heading {
+  padding: 2.66%;
+  background-color: #D2042D;
+  color: white;
+  font-size: 2vw;
 }
 
-.faq-container {
-display: flex;
-justify-content: center;
-flex-direction: column;
+/*  STYLE FAQ SECTION WHICH CONTAINS ALL FAQ RELATED ELEMENTS  */
+.faq_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.hr-line {
-  width: 60%;
+/*  STYLE HORIZONTAL LINE UNDER FAQ QUESTIONS  */
+.faq_hr {
+  width: 50%;
   margin: auto;
 }
 
-/* Style the buttons that are used to open and close the faq-page body */
-.faq-page {
-    /* background-color: #eee; */
-    color: #444;
-    cursor: pointer;
-    padding: 30px 20px;
-    width: 60%;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin: auto;
+/* STYLES THE Q OF THE FAQ (TEXT) */
+.faq_page {
+  color: black;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 50%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+  font-size: 1.5vw;
 }
 
-.faq-body {
-    margin: auto;
-    /* text-align: center; */
-   width: 50%;
-   padding: auto;
+/*  STYLES THE TEXT WITHIN THE DROPDOWN (ANSWER TO FAQ)  */
+.faq_body {
+  margin: auto;
+  width: 50%;
+  padding: inherit;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  font-size: 1vw;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .faq-page:hover {
-    background-color: #F9F9F9;
+/* ADDS A BACKGROUND SHADE TO THE ACTIVELY CLICKED FAQ */
+.active, .faq_page:hover {
+  background-color: #f6f6f6;
 }
 
-/* Style the faq-page panel. Note: hidden by default */
-.faq-body {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+/*  STYLES THE PLUS SYMBOL  */
+.faq_page:after {
+  content: '\02795'; /* Unicode for + symbol */
+  font-size: 1vw;
+  color: black;
+  float: right;
+  margin-left: 5px;
 }
 
-.faq-page:after {
-    content: '\02795';
-    /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
+/*  STYLES THE MINUS SYMBOL  */
 .active:after {
-    content: "\2796";
-    /* Unicode character for "minus" sign (-) */
+  content: "\2796"; /* Unicode for - symbol */
 }
