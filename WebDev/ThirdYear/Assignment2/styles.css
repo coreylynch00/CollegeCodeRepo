@@ -7,9 +7,11 @@ html {
 
 /*  STYLES THE NAV BAR AND ALL COMPONENTS WITHIN NAV BAR  */
 .logo {
-  max-width: 15%;
+  max-width: 25vh;
   float: left;
-  padding-left: 5%;
+  padding-left: 3%;
+  /*  USE OF FILTER TO MAKE LOGO A WARMER COLOUR  */
+  filter: saturate(2);
 }
 
 /*  STYLES THE BACKGROUND COLOUR OF THE NAV BAR  */
@@ -27,7 +29,7 @@ html {
 /*  STYLES EACH ITEM IN NAV BAR LIST  */
 .nav_bar li {
   float: right;
-  font-size: 2vw;
+  font-size: 3vh;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -43,6 +45,7 @@ html {
 /*  STYLES LINKS WHEN THEY ARE HOVERED  */
 .nav_bar li a:hover {
   color: #D2042D;
+  background-color: #f6f6f6;
 }
 
 /*  STYLES EACH NAV LINK FOR THE SPECIFIC PAGE YOU ARE ON - HOME LINK STYLING  */
@@ -117,7 +120,7 @@ html {
 .background {
   background-image: url("images/background.jpg");
   background-color: #cccccc;
-  height: 33vw;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +141,7 @@ html {
 
 /*  STYLES THE H1 WHICH APPEARS ON THE IMAGE ON EACH PAGE  */
 .heading_one_main {
-  font-size: 4vw;
+  font-size: 8vh;
   font-style: italic;
   text-transform: uppercase;
   animation-name: example;
@@ -155,7 +158,7 @@ html {
 
 /*  STYLES THE H2 WHICH APPEARS ON THE IMAGE ON EACH PAGE  */
 .heading_two_main {
-  font-size: 2vw;
+  font-size: 4vh;
   font-style: italic;
   background: rgba(0, 0, 0, 0.4);
 }
@@ -173,14 +176,14 @@ footer {
 /*  STYLES EACH PARAGRAPH WHICH APPEARS AT FOOT OF HOME PAGE  */
 .foot_p {
   display: inline-block;
-  font-size: 1.25vw;
+  font-size: 2.3vh;
   border-right: 1px solid;
   padding-left: 3%;
   padding-right: 3%;
-  padding-bottom: 1%;
-  padding-top: 1%;
+  padding-bottom: 1.44%;
+  padding-top: 1.44%;
   color: white;
-  border-color: white;
+  border-color: white;;
 }
 
 /*  STYLES THE FURTHERST MOST LEFT ELEMENT TO INCLUDE A BORDER LINE  */
@@ -195,20 +198,20 @@ footer {
 
 /*  STYLES ICONS  */
 .contact_icon {
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 3vh;
+  height: 3vh;
 }
 
 /*  STYLES THE CONTAINER FOR THE INLINE P TAGS  */
 #contact_container {
   background-color: #D2042D;
-  padding: 0.85vw;
+  padding: 1%;
 }
 
 /*  ALIGNS THE P TAGS AND THE ICONS FOR CONTACT  */
 .contact_p {
   display: inline-block;
-  font-size: 1.2vw;
+  font-size: 2.5vh;
   border-right: 1px solid;
   color: white;
   border-color: white;
@@ -242,13 +245,13 @@ footer {
 }
 
 #map {
-  width: 30vw;
-  height: 20vw;
+  width: 40vh;
+  height: 30vh;
 }
 
 /*  STYLES THE LOCATION PARAGRAPH  */
 #location_p {
-  font-size: 1.2vw;
+  font-size: 3vh;
   color: black;
 }
 
@@ -267,7 +270,7 @@ footer {
 .secondary_background {
   background-image: url("images/services.jpg");
   background-color: #cccccc;
-  height: 33vw;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -301,7 +304,7 @@ table, th, td {
 
 /*  STYLES HEADING ROW  */
 table, th {
-  padding: 3.5%;
+  padding: 3.7%;
   /*  Removing border from table headings  */
   border: 0;
   /*  Replacing border with just a border on the right of each column to keep pages consistent  */
@@ -315,12 +318,12 @@ th, td {
 
 /*  STYLE TABLE HEADINGS  */
 #table_headings {
-  font-size: 1.55vw;
+  font-size: 3vh;
 }
 
 /*  CHANGE TABLE DATA FONT SIZE  */
 td {
-  font-size: 1.2vw;
+  font-size: 2vh;
 }
 
 /*  STYLE T&C AT END OF TABLE  */
@@ -328,7 +331,7 @@ td {
   float: left;
   font-style: italic;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 2vh;
   padding: 1.3%;
 }
 
@@ -336,12 +339,18 @@ td {
 
 /*  STYLING ABOUT US PAGE  */
 
+/*  STYLES ICONS  */
+.faq_icon {
+  width: 3vh;
+  height: 3vh;
+}
+
 /*  STYLE FAQ HEADING  */
 .faq_heading {
   padding: 2.66%;
   background-color: #D2042D;
   color: white;
-  font-size: 2vw;
+  font-size: 3vh;
 }
 
 /*  STYLE FAQ SECTION WHICH CONTAINS ALL FAQ RELATED ELEMENTS  */
@@ -367,7 +376,7 @@ td {
   outline: none;
   transition: 0.4s;
   margin: auto;
-  font-size: 1.5vw;
+  font-size: 2.5vh;
 }
 
 /*  STYLES THE TEXT WITHIN THE DROPDOWN (ANSWER TO FAQ)  */
@@ -379,7 +388,7 @@ td {
   background-color: white;
   display: none;
   overflow: hidden;
-  font-size: 1vw;
+  font-size: 2vh;
 }
 
 /* ADDS A BACKGROUND SHADE TO THE ACTIVELY CLICKED FAQ */
@@ -390,7 +399,7 @@ td {
 /*  STYLES THE PLUS SYMBOL  */
 .faq_page:after {
   content: '\02795'; /* Unicode for + symbol */
-  font-size: 1vw;
+  font-size: 1.5vh;
   color: black;
   float: right;
   margin-left: 5px;
