@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/fstTxt"
+        android:text="Name"
+        android:layout_height="20dp"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"/>
+    <TextView
+        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/secTxt"
+        android:text="Location" />
+
+    <EditText
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/thirdTxt"
+    android:text="Designation"
+        android:layout_height="20dp"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtDesignation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:ems="10"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnSave"
+        android:text="Save"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/clearbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Database"
+        android:layout_marginLeft="100dp"   />
+</LinearLayout>
