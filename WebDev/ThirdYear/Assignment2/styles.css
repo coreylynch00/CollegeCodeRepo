@@ -409,3 +409,34 @@ td {
 .active:after {
   content: "\2796"; /* Unicode for - symbol */
 }
+
+/*****************************************************************************/
+
+/*  IMPROVING LAYOUT FOR DEVICES UP TO 1024PX WIDTH  */
+@media screen and (max-width: 1024px) {
+
+  /*  STYLING FOOTER PARAGRAPHS ON INDEX PAGE  */
+  .foot_p {
+    border: 0px solid;
+    padding-bottom: 0px;
+  }
+
+  .foot_p:first-child {
+    border: 0px solid;
+  }
+
+  /*  STYLING CONTACT SECTION ON CONTACT PAGE  */
+  .contact_p {
+    border: 0px solid;
+    padding: 1%;
+  }
+
+  .contact_p:first-child {
+    border: 0px solid;
+  }
+
+  /*  STYLE H2 on image on all pages  */
+  .heading_two_main {
+    font-size: 3vh;
+  }
+}
