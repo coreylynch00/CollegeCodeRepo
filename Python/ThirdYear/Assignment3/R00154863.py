@@ -3,7 +3,6 @@
 
 """
 Created on a windy day
-
 @author: Corey Lynch
 @id: R00154863
 @Cohort: SD3-B
@@ -63,8 +62,7 @@ def Task1():
     y = df_clean.RainTomorrow
     # print(y)
 
-    max_depth_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-                      22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
+    max_depth_list = [i for i in range(1, 36)]
 
     accuracy_listA = []
     accuracy_listB = []
@@ -194,10 +192,17 @@ def Task2():
     X = df_clean[['Pressure', 'Humidity']]
     y = df_clean['RainToday']
 
-    #models = [('KNC', KNeighborsClassifier()), ('DTC', tree.DecisionTreeClassifier()), ('GNB', GaussianNB()),
-    #          ('RFC', RandomForestClassifier()), ('SVC', SVC())]
+    """
+    *** NOTE: Script was hanging on SVC(), not sure if it is a problem with my system or not.
+              I have commented out the models below and created a new models list excluding SVC().
+              RFC() is also a bit slow, takes about 60 seconds to process but it will get there.
 
-    models = [('KNC', KNeighborsClassifier()), ('DTC', tree.DecisionTreeClassifier()), ('GNB', GaussianNB())]
+    models = [('KNC', KNeighborsClassifier()), ('DTC', tree.DecisionTreeClassifier()), ('GNB', GaussianNB()),
+              ('SVC', SVC()), ('RFC', RandomForestClassifier())]
+    """
+
+    models = [('KNC', KNeighborsClassifier()), ('DTC', tree.DecisionTreeClassifier()), ('GNB', GaussianNB()), 
+    ('RFC', RandomForestClassifier())]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
 
@@ -210,35 +215,155 @@ def Task2():
 
         # Train Accuracy
         mod_results_train = model_selection.cross_val_score(model, X_train, y_train, cv=kfold, scoring=accuracy)
-        results_train.append(mod_results_train)
+        results_train.append(mod_results_train.mean() * 100)
         # Test Accuracy
         mod_results_test = model_selection.cross_val_score(model, X_test, y_test, cv=kfold, scoring=accuracy)
-        results_test.append(mod_results_test)
+        results_test.append(mod_results_test.mean() * 100)
         # Append names
         names.append(name)
 
         print(f"|Train Accuracy| Model: {name}, Accuracy: {mod_results_train.mean()}")
         print(f"|Test Accuracy| Model: {name}, Accuracy: {mod_results_test.mean()}")
 
-    # print(len(results_train))
-    # print(len(results_test))
-
     x = np.arange(len(names))
     width = 0.40
 
-    plt.bar(x-0.2, results_test, width)
-    plt.bar(x+0.2, results_train, width)
+    fig, ax = plt.subplots()
+    rects1 = ax.bar(x-0.2, results_test, width, label="Test")
+    rects2 = ax.bar(x+0.2, results_train, width, label="Train")
+
+    ax.set_xticks(x, names)
+    ax.set_ylabel("Accuracy As Percentage")
+    ax.set_xlabel("Model")
+    ax.legend(loc='lower right')
+    ax.set_title("Test & Train Accuracy Results of Various Models")
+
+    ax.bar_label(rects1, padding=3)
+    ax.bar_label(rects2, padding=3)
+    plt.show()
+
+    """
+    GaussianNB is the best model of the 4 above as it has the highest training and test accuracy.
+    This may be because it is the most suited model for this dataset in particular.s
+    """
+
+def Task3():
+    subDF = df[['WindSpeed9am', 'WindSpeed3pm', 'Humidity9am', 'Humidity3pm', 'MinTemp']]
+    # print(subDF.shape)
+
+    df_clean = subDF.dropna()
+    # print(df_clean.shape)
+
+    X = df_clean[['WindSpeed9am', 'WindSpeed3pm', 'Humidity9am', 'Humidity3pm']]
+    y = df_clean['MinTemp']
+    
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33)
+
+    ########################## 2 BINS #############################
+
+    kbd = KBinsDiscretizer(n_bins=2)
+    #print("############################",y_train)
+    y_disc = y.values.reshape(1,-1)
+    y_bin = kbd.fit_transform(y_disc) 
+    # n_neighbours = 5 by default
+    clf = KNeighborsClassifier()
+    clf.fit(X_train, y_bin)
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_pred, y_test)
+
+    ########################## 3 BINS #############################
+
+    kbd = KBinsDiscretizer(n_bins=3)
+    #print("############################",y_train)
+    y_disc = y.values.reshape(1,-1)
+    y_bin = kbd.fit_transform(y_disc) 
+    # n_neighbours = 5 by default
+    clf = KNeighborsClassifier()
+    clf.fit(X_train, y_bin)
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_pred, y_test)
+
+    ########################## 4 BINS #############################
+
+    kbd = KBinsDiscretizer(n_bins=4)
+    #print("############################",y_train)
+    y_disc = y.values.reshape(1,-1)
+    y_bin = kbd.fit_transform(y_disc) 
+    # n_neighbours = 5 by default
+    clf = KNeighborsClassifier()
+    clf.fit(X_train, y_bin)
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_pred, y_test)
+
+    ########################## 5 BINS #############################
+
+    kbd = KBinsDiscretizer(n_bins=5)
+    #print("############################",y_train)
+    y_disc = y.values.reshape(1,-1)
+    y_bin = kbd.fit_transform(y_disc) 
+    # n_neighbours = 5 by default
+    clf = KNeighborsClassifier()
+    clf.fit(X_train, y_bin)
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_pred, y_test)
+
+    ########################## 6 BINS #############################
+
+    kbd = KBinsDiscretizer(n_bins=6)
+    #print("############################",y_train)
+    y_disc = y.values.reshape(1,-1)
+    y_bin = kbd.fit_transform(y_disc) 
+    # n_neighbours = 5 by default
+    clf = KNeighborsClassifier()
+    clf.fit(X_train, y_bin)
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_pred, y_test)
+
+
+def Task4():
+    
+    subDF = df[['Temp9am', 'Temp3pm', 'Humidity9am', 'Humidity3pm',]]
+    df_clean = subDF.dropna()
+
+    kmeans = KMeans(n_clusters=2)
+    clust2 = kmeans.fit(df_clean)
+    print("Accuracy Where n_clusters = 2 : ", clust2.inertia_)
+
+    kmeans = KMeans(n_clusters=3)
+    clust3 = kmeans.fit(df_clean)
+    print("Accuracy Where n_clusters = 3 : ", clust3.inertia_)
+
+    kmeans = KMeans(n_clusters=4)
+    clust4 = kmeans.fit(df_clean)
+    print("Accuracy Where n_clusters = 4 : ", clust4.inertia_)
+
+    kmeans = KMeans(n_clusters=5)
+    clust5 = kmeans.fit(df_clean)
+    print("Accuracy Where n_clusters = 5 : ", clust5.inertia_)
+
+    kmeans = KMeans(n_clusters=6)
+    clust6 = kmeans.fit(df_clean)
+    print("Accuracy Where n_clusters = 6 : ", clust6.inertia_)
+
+    kmeans = KMeans(n_clusters=7)
+    clust7 = kmeans.fit(df_clean)
+    print("Accuracy Where n_clusters = 7 : ", clust7.inertia_)
+
+    kmeans = KMeans(n_clusters=8)
+    clust8 = kmeans.fit(df_clean)
+    print("Accuracy Where n_clusters = 8 : ", clust8.inertia_)
+    
+    # NOTE : Couldn't get scatter plot to work for df after it was passed through kmeans
+
+    plt.scatter(df_clean.iloc[:, 0],
+    df_clean.iloc[:, 1],
+    c=kmeans.labels_,
+    s=50,
+    cmap="viridis")
     plt.show()
 
 
-
-#def Task3():
-#def Task4():
-
-
 #Task1()
-Task2()
-
-
-
-
+#Task2()
+#Task3()
+#Task4()
