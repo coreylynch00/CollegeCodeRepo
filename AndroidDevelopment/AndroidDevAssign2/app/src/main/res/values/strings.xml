@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">AndroidDevAssign2</string>
+    <string name="app_name">My Application</string>
+    <string name="weather_centre"><u>Weather Centre</u></string>
+    <string name="enter_city_name">Enter City Name</string>
+    <string name="search_weather">Check Weather</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+    <string name="detailed_weather_info"><u>Detailed Weather Info</u></string>
+    <string name="click_here_to_view_database">Click Here To View Database!</string>
 </resources>
